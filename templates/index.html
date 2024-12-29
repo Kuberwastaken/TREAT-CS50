@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TREAT Project</title>
+    <title>TREAT</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the TREAT Project</h1>
-        <form id="text-form" method="POST">
-            <textarea id="text-input" name="text" rows="10" placeholder="Enter your text or script here..."></textarea>
-            <br>
-            <button type="submit">Analyze Script</button>
-        </form>
-        <div id="loading-bar" class="loading-bar"></div>
-        <div id="results"></div>
+    <div class="choco-container">
+        <header class="header">
+            <h1>TREAT</h1>
+            <p>
+                <span class="highlight">T</span>rigger 
+                <span class="highlight">R</span>ecognition for 
+                <span class="highlight">E</span>njoyable and 
+                <span class="highlight">A</span>ppropriate 
+                <span class="highlight">T</span>elevision
+            </p>
+        </header>
+        <main class="main-content">
+            <form id="text-form" method="POST" class="sweet-form">
+                <textarea id="text-input" name="text" rows="10" placeholder="Enter your text or script here..."></textarea>
+                <button type="submit">Analyze Script</button>
+            </form>
+            <div id="loading-bar" class="loading-bar"></div>
+            <div id="results"></div>
+        </main>
     </div>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>

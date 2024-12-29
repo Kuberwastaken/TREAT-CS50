@@ -1,6 +1,10 @@
 document.getElementById('text-form').addEventListener('submit', async function(event) {
     event.preventDefault();
     const text = document.getElementById('text-input').value;
+    const loadingBar = document.getElementById('loading-bar');
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.textContent = ''; // Clear previous results
+    loadingBar.style.display = 'block';
 
     try {
         const response = await fetch('/upload', {
@@ -16,9 +20,11 @@ document.getElementById('text-form').addEventListener('submit', async function(e
         }
 
         const result = await response.json();
-        document.getElementById('results').innerText = `Triggers: ${result.triggers.join(', ')}`;
+        resultsDiv.innerHTML = `<span>Triggers:</span> ${result.triggers.join(', ')}`;
     } catch (error) {
         console.error('Error analyzing text:', error);
-        document.getElementById('results').innerText = 'Error analyzing text.';
+        resultsDiv.innerHTML = '<span>Error:</span> Unable to analyze text.';
+    } finally {
+        loadingBar.style.display = 'none';
     }
 });
