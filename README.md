@@ -137,4 +137,4 @@ I would like to thank:
 - Parasite (2019): For that unexpected jumpscare that ruined my appetite and ultimately inspired this project.
 
 ## License
-This project is licensed under the [MIT License](https://www.mit.edu/~amini/LICENSE.md)
+This project is licensed under the [apache 2.0 license](https://github.com/Kuberwastaken/TREAT/blob/main/LICENSE))
