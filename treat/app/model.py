@@ -71,8 +71,3 @@ def analyze_script(script):
         return list(identified_triggers)
     except Exception as e:
         return {"error": str(e)}
-
-# Example usage
-# script = "After a long day of work, Mark decided to unwind with a bottle of whiskey..."
-# result = analyze_script(script)
-# print("Final Identified Triggers:", result)

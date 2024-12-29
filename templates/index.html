@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREAT Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the TREAT Project</h1>
+        <form id="text-form" action="/upload" method="POST">
+            <textarea id="text-input" name="text" rows="10" cols="50" placeholder="Enter your text or script here..."></textarea>
+            <br>
+            <button type="submit">Analyze Script</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

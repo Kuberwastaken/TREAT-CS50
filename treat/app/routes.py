@@ -1,16 +1,16 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from app import app
 from app.model import analyze_script
 
 @app.route('/')
 def home():
-    return "Welcome to the TREAT Project!"
+    return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_script():
     try:
-        file = request.files['file']
-        content = file.read().decode('utf-8')
+        data = request.get_json()
+        content = data.get('text', '')
         triggers = analyze_script(content)
         return jsonify({"triggers": triggers})
     except Exception as e:
