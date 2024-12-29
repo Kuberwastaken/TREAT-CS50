@@ -4,29 +4,31 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #3e2723, #1b0000); /* Chocolate background */
+    background: url('/static/images/chocolate-bar.jpg') no-repeat center center fixed; /* Chocolate bar background image */
+    background-size: cover;
     color: #FFFFFF;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     overflow: hidden;
 }
 
 .choco-container {
-    background: #4e342e; /* Dark chocolate color */
+    background: rgba(78, 52, 46, 0.9); /* Dark chocolate color with opacity */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(5px);
     border-radius: 20px;
     padding: 40px;
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 1000px;
+    height: 80%;
     animation: fadeIn 1s ease-in-out;
     border: 1px solid #5d4037; /* Slightly lighter chocolate border */
-    margin: 0 auto; /* Center horizontally */
     display: flex;
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -40,18 +42,19 @@ body {
     }
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    color: #d7ccc8; /* Light creamy color */
-    text-shadow: 0 0 5px #ffab91, 0 0 10px #ffab91; /* Light shimmer */
-    margin-bottom: 10px;
+.header {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #d7ccc8; /* Light creamy color */
 }
 
 .header p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffab91; /* Candy-like color */
-    text-align: center;
 }
 
 .highlight {
@@ -59,21 +62,34 @@ body {
 }
 
 .main-content {
-    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sweet-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 textarea {
     width: 100%;
-    padding: 15px;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+    height: 70%;
+    padding: 20px;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     resize: none;
     background: #3e2723; /* Chocolate color */
     color: #ffecb3; /* Creamy color */
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
     transition: all 0.3s ease-in-out;
 }
 
@@ -83,17 +99,19 @@ textarea:focus {
 }
 
 button {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2rem;
+    width: 50%;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin-top: 20px;
     background: linear-gradient(45deg, #8d6e63, #d7ccc8); /* Chocolate gradient */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     text-transform: uppercase;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
+    position: relative; /* To enable overlay effects */
 }
 
 button:hover {
@@ -101,9 +119,26 @@ button:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+button:hover::after {
+    opacity: 1;
+}
+
 .loading-bar {
     display: none;
-    width: 100%;
+    width: 80%;
     height: 5px;
     background: linear-gradient(90deg, #8d6e63, #d7ccc8); /* Chocolate gradient */
     margin-top: 20px;
