@@ -22,6 +22,7 @@ def extract_category(response_text):
         "Gore",
         "Vomit",
         "Sexual Content",
+        "Sexual Abuse",
         "Self-Harm",
         "Gun Use"
         "Animal Cruelty",

@@ -138,7 +138,7 @@ button:hover::after {
 
 .loading-bar {
     display: none;
-    width: 80%;
+    width: 100%; /* Makes the loading bar span the full width of the parent container */
     height: 5px;
     background: linear-gradient(90deg, #8d6e63, #d7ccc8); /* Chocolate gradient */
     margin-top: 20px;

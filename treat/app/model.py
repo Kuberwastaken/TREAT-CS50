@@ -22,6 +22,7 @@ def analyze_script(script):
             "Gore",
             "Vomit",
             "Sexual Content",
+            "Sexual Abuse",
             "Self-Harm",
             "Gun Use",
             "Animal Cruelty",
