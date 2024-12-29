@@ -1,5 +1,7 @@
 # TREAT: Trigger Recognition for Enjoyable and Appropriate Television
 
+![Treat_Banner](https://github.com/user-attachments/assets/eeae40eb-85f0-4976-b953-410a42d68038)
+
 ## Project Description
 I was tired of getting grossed out watching unexpected scenes in movies and TV and losing my appetite, that's why I created TREAT.
 
