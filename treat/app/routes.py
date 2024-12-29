@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import Flask, request, jsonify
 from app import app
 from app.model import analyze_script
 
