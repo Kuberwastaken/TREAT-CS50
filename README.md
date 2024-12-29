@@ -25,20 +25,20 @@ To use the FLAN-T5-Base model, you need to log in to your Hugging Face account a
 
  1. Login or Create a Hugging Face Account:
 
- -  Visit [Hugging Face](https://huggingface.co/) and create an account
+   Visit [Hugging Face](https://huggingface.co/) and create an account
 
  2. Get Your Access Token:
 
- - Navigate to your account settings and [generate an access token](https://huggingface.co/settings/tokens).
+   Navigate to your account settings and [generate an access token](https://huggingface.co/settings/tokens).
 
  3. Login to Hugging Face in Your Environment:
      
- - Run the following command in your terminal:
+   Run the following command in your terminal:
 
    ```
    huggingface-cli login
    ```
- - Enter your Hugging Face access token when prompted.
+   Enter your Hugging Face access token when prompted.
 
 
  4. Download the FLAN-T5-Base Model:
