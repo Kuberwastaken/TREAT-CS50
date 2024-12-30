@@ -37,7 +37,7 @@ def analyze_script(script):
             for category in trigger_categories:
                 # Create a more specific and detailed prompt for the model to analyze each category
                 if category == "Sexual Content":
-                    prompt = f"Does the following text describe clear and explicit sexual activity, behavior, or inappropriate content? Only agree if you are very confident. Respond 'yes' or 'no':\n\nText: {chunk}\n"
+                    prompt = f"Does the following text describe clear and explicit sexual activity, behavior, or inappropriate content? Only agree if you are very confident and the content is explicit. Respond 'yes' or 'no':\n\nText: {chunk}\n\nContext: This text is part of a larger script and should be evaluated carefully."
                 else:
                     prompt = f"Does the following text contain {category}? Respond 'yes' or 'no':\n\nText: {chunk}\n"
 
@@ -48,7 +48,7 @@ def analyze_script(script):
                 outputs = model.generate(
                     **inputs, 
                     max_length=25, 
-                    temperature=0.2,  # Lower temperature for more deterministic responses
+                    temperature=0.1,  # Lower temperature for more deterministic responses
                     num_beams=4,      # Decreased number of beams for better efficiency
                     early_stopping=True,
                     pad_token_id=tokenizer.eos_token_id
@@ -68,7 +68,11 @@ def analyze_script(script):
                 # Check if the response contains a positive indication of the category
                 if "yes" in response_text.lower().strip():
                     identified_triggers.add(category)
-        
+
+        # If no triggers are identified, return "None"
+        if not identified_triggers:
+            return ["None"]
+
         return list(identified_triggers)
     except Exception as e:
         return {"error": str(e)}

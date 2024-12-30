@@ -169,10 +169,31 @@ button:hover::after {
 }
 
 #results {
-    margin-top: 20px;
+    overflow-x: auto; /* Add horizontal scrollbar only if needed */
+    overflow-y: hidden;
+    margin-top: 30px;
     color: #ff7043; /* Sweet orange color */
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 0 0 5px #ff7043, 0 0 10px #ff7043; /* Reduced shininess */
     text-align: center;
+    word-wrap: break-word; /* Ensure text wraps appropriately */
+    overflow-wrap: break-word; /* Compatibility with other browsers */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculations */
+    white-space: nowrap; /* Prevent line breaks so horizontal scrolling is possible */
+}
+
+#results::-webkit-scrollbar {
+    height: 10px; /* Horizontal scrollbar height */
+}
+
+#results::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #8d6e63, #d7ccc8); /* Chocolate gradient for scrollbar thumb */
+    border-radius: 5px;
+}
+
+#results::-webkit-scrollbar-track {
+    background: rgba(78, 52, 46, 0.5); /* Lighter chocolate track */
+    border-radius: 5px;
 }
