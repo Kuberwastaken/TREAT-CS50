@@ -11,7 +11,7 @@ TREAT is a web application that uses natural language processing to analyze movi
 
 ## Video Demo
 
-[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=7Y41Z80u2Jw]
+[![YouTube](http://i.ytimg.com/vi/7Y41Z80u2Jw/hqdefault.jpg)](https://www.youtube.com/watch?v=7Y41Z80u2Jw)
 
 ## Installation Instructions
 ### Prerequisites
