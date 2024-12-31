@@ -126,9 +126,6 @@ These categories help address a very real-world problem by forewarning viewers a
 
 - Making it mobile friendly.
 
-## Open Source Contribution
-This repository is completely open source and free to contribute. I intend to keep this project alive and evolve it into a tool that's extremely usable for all. Contributions are welcome to add new features, improve the user interface, or enhance the script analysis.
-
 ## Acknowledgements
 I would like to thank:
 
@@ -138,5 +135,3 @@ I would like to thank:
 
 - Parasite (2019): For that unexpected jumpscare that ruined my appetite and ultimately inspired this project.
 
-## License
-This project is licensed under the [apache 2.0 license](https://github.com/Kuberwastaken/TREAT/blob/main/LICENSE))
