@@ -2,14 +2,16 @@
 
 ![Treat_Banner](https://github.com/user-attachments/assets/eeae40eb-85f0-4976-b953-410a42d68038)
 
-## Project Description
+## Description
 I was tired of getting grossed out watching unexpected scenes in movies and TV and losing my appetite, that's why I created TREAT.
 
 The goal of this project is to empower viewers by forewarning them about potential triggers in the content they watch, making the viewing experience more enjoyable, inclusive, and appropriate for everyone.
 
 TREAT is a web application that uses natural language processing to analyze movie and TV show scripts, identifying potential triggers to help viewers make informed choices.
 
-[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+## Video Demo
+
+[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=7Y41Z80u2Jw]
 
 ## Installation Instructions
 ### Prerequisites
