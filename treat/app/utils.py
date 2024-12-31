@@ -11,6 +11,7 @@ def identify_triggers(outputs):
             if category:
                 identified_triggers.add(category)
     
+    # Convert the set of identified triggers to a list and return it
     return list(identified_triggers)
 
 def extract_category(response_text):
@@ -24,7 +25,7 @@ def extract_category(response_text):
         "Sexual Content",
         "Sexual Abuse",
         "Self-Harm",
-        "Gun Use"
+        "Gun Use", # Missing comma added here
         "Animal Cruelty",
         "Mental Health Issues"
     ]
@@ -33,4 +34,5 @@ def extract_category(response_text):
     for category in trigger_categories:
         if category.lower() in response_text.lower():
             return category
+    # Return None if no category is found
     return None

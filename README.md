@@ -124,6 +124,8 @@ These categories help address a very real-world problem by forewarning viewers a
 
 - Expand the list of triggers to cover a broader range of sensitive topics and ensure comprehensive analysis.
 
+- Making it mobile friendly.
+
 ## Open Source Contribution
 This repository is completely open source and free to contribute. I intend to keep this project alive and evolve it into a tool that's extremely usable for all. Contributions are welcome to add new features, improve the user interface, or enhance the script analysis.
 

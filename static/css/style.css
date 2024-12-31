@@ -1,199 +1,222 @@
-/* Chocolate and sweets theme */
+/* Chocolate and sweets theme for TREAT */
 
+/* Set up the main styles for the body of the document */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('/static/images/chocolate-bar.jpg') no-repeat center center fixed; /* Chocolate bar background image */
-    background-size: cover;
-    color: #FFFFFF;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #836853; /* Background color resembling chocolate */
+    color: #FFFFFF; /* White text color for contrast */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox layout for centering content */
+    flex-direction: column; /* Column layout */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden; /* Hide overflow content */
 }
 
+/* Style the container for the main content */
 .choco-container {
-    background: rgba(78, 52, 46, 0.9); /* Dark chocolate color with opacity */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border-radius: 20px;
-    padding: 40px;
-    width: 90%;
-    max-width: 1000px;
-    height: 80%;
-    animation: fadeIn 1s ease-in-out;
+    background: rgba(78, 52, 46, 0.9); /* Semi-transparent dark chocolate background */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Soft shadow effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px; /* Padding inside the container */
+    width: 90%; /* 90% width of the viewport */
+    max-width: 1000px; /* Maximum width */
+    height: 80%; /* 80% height of the viewport */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
     border: 1px solid #5d4037; /* Slightly lighter chocolate border */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Flexbox layout for centering content */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
 }
 
+/* Define the fade-in animation for the container */
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: scale(0.95);
+        opacity: 0; /* Start with no opacity */
+        transform: scale(0.95); /* Start slightly scaled down */
     }
     to {
-        opacity: 1;
-        transform: scale(1);
+        opacity: 1; /* Fade to full opacity */
+        transform: scale(1); /* Scale to full size */
     }
 }
 
+/* Style the header of the document */
 .header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Margin below the header */
 }
 
+/* Style the main heading */
 .header h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Large font size */
     color: #d7ccc8; /* Light creamy color */
 }
 
+/* Style the paragraph under the heading */
 .header p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Medium font size */
     color: #ffab91; /* Candy-like color */
 }
 
+/* Highlight certain text */
 .highlight {
     color: #ff7043; /* Sweet orange color */
 }
 
+/* Style the main content area */
 .main-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
 }
 
+/* Style the form */
 .sweet-form {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
 }
 
+/* Style the textarea element */
 textarea {
-    width: 100%;
-    height: 70%;
-    padding: 20px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 10px;
-    resize: none;
-    background: #3e2723; /* Chocolate color */
-    color: #ffecb3; /* Creamy color */
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-in-out;
+    width: 100%; /* Full width */
+    height: 70%; /* 70% height of the container */
+    padding: 20px; /* Padding inside the textarea */
+    font-size: 1.2rem; /* Medium font size */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    background: #3e2723; /* Chocolate color background */
+    color: #ffecb3; /* Creamy color text */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inset shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
 }
 
+/* Style the textarea when it is focused */
 textarea:focus {
-    outline: none;
-    box-shadow: 0 0 15px #ffab91; /* Light glow */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 15px #ffab91; /* Light glow when focused */
 }
 
+/* Style the button element */
 button {
-    width: 50%;
-    padding: 20px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    background: linear-gradient(45deg, #8d6e63, #d7ccc8); /* Chocolate gradient */
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-    position: relative; /* To enable overlay effects */
+    width: 50%; /* 50% width of the container */
+    padding: 20px; /* Padding inside the button */
+    font-size: 1.5rem; /* Large font size */
+    margin-top: 20px; /* Margin above the button */
+    background: linear-gradient(45deg, #8d6e63, #d7ccc8); /* Chocolate gradient background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    position: relative; /* Relative positioning for overlay effects */
 }
 
+/* Style the button on hover */
 button:hover {
-    background: linear-gradient(45deg, #d7ccc8, #8d6e63); /* Reversed gradient */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(45deg, #d7ccc8, #8d6e63); /* Reversed gradient on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
 }
 
+/* Create an overlay effect for the button */
 button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    content: ''; /* Empty content */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(255, 255, 255, 0.1); /* Light overlay */
+    border-radius: 10px; /* Rounded corners */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
+/* Show the overlay effect on hover */
 button:hover::after {
-    opacity: 1;
+    opacity: 1; /* Show overlay on hover */
 }
 
+/* Style the loading bar element */
 .loading-bar {
-    display: none;
-    width: 100%; /* Makes the loading bar span the full width of the parent container */
-    height: 5px;
-    background: linear-gradient(90deg, #8d6e63, #d7ccc8); /* Chocolate gradient */
-    margin-top: 20px;
-    border-radius: 2px;
-    overflow: hidden;
-    position: relative;
+    display: none; /* Initially hidden */
+    width: 100%; /* Full width */
+    height: 5px; /* Fixed height */
+    background: linear-gradient(90deg, #8d6e63, #d7ccc8); /* Chocolate gradient background */
+    margin-top: 20px; /* Margin above the loading bar */
+    border-radius: 2px; /* Slightly rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Relative positioning */
 }
 
+/* Create an animation for the loading bar */
 .loading-bar::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
-    animation: loading-animation 2s infinite;
+    content: ''; /* Empty content */
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)); /* Gradient background */
+    animation: loading-animation 2s infinite; /* Infinite loading animation */
 }
 
+/* Define the loading animation */
 @keyframes loading-animation {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Start outside on the left */
     }
     50% {
-        transform: translateX(0);
+        transform: translateX(0); /* Move to the center */
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Move outside on the right */
     }
 }
 
+/* Style the results container */
 #results {
     overflow-x: auto; /* Add horizontal scrollbar only if needed */
-    overflow-y: hidden;
-    margin-top: 30px;
+    overflow-y: hidden; /* Hide vertical overflow */
+    margin-top: 30px; /* Margin above the results */
     color: #ff7043; /* Sweet orange color */
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.5rem; /* Large font size */
+    font-weight: bold; /* Bold text */
     text-shadow: 0 0 5px #ff7043, 0 0 10px #ff7043; /* Reduced shininess */
-    text-align: center;
+    text-align: center; /* Center-align text */
     word-wrap: break-word; /* Ensure text wraps appropriately */
     overflow-wrap: break-word; /* Compatibility with other browsers */
-    padding: 10px;
+    padding: 10px; /* Padding inside the results container */
     box-sizing: border-box; /* Include padding in width calculations */
     white-space: nowrap; /* Prevent line breaks so horizontal scrolling is possible */
 }
 
+/* Style the horizontal scrollbar */
 #results::-webkit-scrollbar {
     height: 10px; /* Horizontal scrollbar height */
 }
 
+/* Style the scrollbar thumb */
 #results::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, #8d6e63, #d7ccc8); /* Chocolate gradient for scrollbar thumb */
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
 }
 
+/* Style the scrollbar track */
 #results::-webkit-scrollbar-track {
     background: rgba(78, 52, 46, 0.5); /* Lighter chocolate track */
     border-radius: 5px;
 }
+
+/* To Fix: Title moving upwards when Output is shown*/

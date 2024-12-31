@@ -11,6 +11,7 @@ def analyze_script(script):
     try:
         # Define chunk size within token limits
         chunk_size = 350  # Adjusted to ensure it fits within the token limit after tokenization
+
         # Split the script into chunks
         script_chunks = [script[i:i + chunk_size] for i in range(0, len(script), chunk_size)]
         

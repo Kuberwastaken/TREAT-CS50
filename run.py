@@ -8,4 +8,5 @@ sys.path.append(abspath(dirname(__file__)) + "/treat")
 from app import app
 
 if __name__ == '__main__':
+    # Run the Flask app with debug mode enabled
     app.run(debug=True)
