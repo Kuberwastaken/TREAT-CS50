@@ -12,7 +12,7 @@ TREAT is a web application that uses natural language processing to analyze movi
 ## Video Demo
 
 <a href="https://www.youtube.com/watch?v=7Y41Z80u2Jw">
-    <img src="http://i.ytimg.com/vi/7Y41Z80u2Jw/hqdefault.jpg" width="800" height="400" alt="YouTube">
+    <img src="http://i.ytimg.com/vi/7Y41Z80u2Jw/hqdefault.jpg" width="800" height="450" alt="YouTube">
 </a>
 
 
